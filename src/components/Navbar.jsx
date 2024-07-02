@@ -37,6 +37,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/large-freight">
+                Large Freight
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/ship">
                 Ship
               </Link>
