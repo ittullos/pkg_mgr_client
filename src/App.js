@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Ship from "./pages/Ship";
 import Navbar from "./components/Navbar";
 import LargeFreight from "./pages/LargeFreight";
+import RetailShipping from "./pages/RetailShipping";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/large-freight" element={<LargeFreight />} />
+        <Route path="/retail-shipping" element={<RetailShipping />} />
         <Route path="/ship" element={<Ship />} />
       </Routes>
     </Router>
