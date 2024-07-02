@@ -48,7 +48,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/ship">
-                Ship
+                Online Shipping Portal
               </Link>
             </li>
           </ul>
