@@ -30,7 +30,7 @@ const Navbar = () => {
           className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`}
           id="navbarColor01"
         >
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto custom-navbar-nav">
             <li className="nav-item">
               <Link className="nav-link mx-3" to="/">
                 Home

@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+/* NAVBAR */
+@media (max-width: 768px) {
+  .custom-navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar-nav .nav-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
