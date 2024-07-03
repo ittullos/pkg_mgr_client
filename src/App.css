@@ -31,3 +31,21 @@
     z-index: 1010;
   }
 }
+
+/* HERO IMAGE */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.jumbotron {
+  flex: 1; /* This will make the jumbotron fill the available space */
+}
+
+.home-container {
+  /* Assuming .home-container is the top-level class in your Home component */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
