@@ -30,15 +30,30 @@ const Navbar = () => {
           className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`}
           id="navbarColor01"
         >
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link mx-3" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/ship">
-                Ship
+              <Link className="nav-link mx-3" to="/large-freight">
+                Large Freight
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link mx-3" to="/retail-shipping">
+                Retail Shipping
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link mx-3" to="/ship">
+                Online Shipping Portal
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link mx-3" to="/contact">
+                Contact
               </Link>
             </li>
           </ul>
