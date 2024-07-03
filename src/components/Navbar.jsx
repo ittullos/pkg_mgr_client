@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     // Bootstrap Navbar with logo, links, and hamburger menu
-    <nav className="navbar navbar-expand-lg navbar-light bg-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-light bg-tertiary position-relative">
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src="pkg-mgr-logo.png" alt="logo" width="120" height="auto" />
