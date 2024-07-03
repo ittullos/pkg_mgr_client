@@ -3,14 +3,14 @@ import HeroImage from "../images/pic-3.jpg";
 
 function Home() {
   return (
-    <div>
+    <div className="home-container">
       <div
-        className="jumbotron jumbotron-fluid bg-secondary text-white"
+        className="jumbotron jumbotron-fluid bg-secondary text-white hero-image"
         style={{
           backgroundImage: `url(${HeroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "75vh",
+          height: "100vh",
         }}
       >
         <div className="container text-center">

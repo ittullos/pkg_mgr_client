@@ -12,14 +12,16 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/large-freight" element={<LargeFreight />} />
-        <Route path="/retail-shipping" element={<RetailShipping />} />
-        <Route path="/online-portal" element={<Ship />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="main-container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/large-freight" element={<LargeFreight />} />
+          <Route path="/retail-shipping" element={<RetailShipping />} />
+          <Route path="/online-portal" element={<Ship />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
