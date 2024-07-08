@@ -52,15 +52,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link mx-3"
-                to="/large-freight"
-                onClick={() => handleLinkClick("/large-freight")}
-              >
-                Large Freight
-              </Link>
-            </li>
+            <li className="nav-item"></li>
             <li className="nav-item">
               <Link
                 className="nav-link mx-3"
@@ -70,6 +62,13 @@ const Navbar = () => {
                 Retail Shipping
               </Link>
             </li>
+            <Link
+              className="nav-link mx-3"
+              to="/large-freight"
+              onClick={() => handleLinkClick("/large-freight")}
+            >
+              Large Freight
+            </Link>
             <li className="nav-item">
               <Link
                 className="nav-link mx-3"
