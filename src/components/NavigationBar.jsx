@@ -21,14 +21,19 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-tertiary position-relative">
+    <nav className="navbar navbar-expand-lg navbar-light bg-tertiary sticky-navbar">
       <div className="container">
         <Link
           className="navbar-brand"
           to="/"
           onClick={() => handleLinkClick("/")}
         >
-          <img src="pkg-mgr-logo.png" alt="logo" width="120" height="auto" />
+          <img
+            src="pkg-mgr-serious-1.png"
+            alt="logo"
+            width="170"
+            height="auto"
+          />
         </Link>
         <button
           className="navbar-toggler"
@@ -121,7 +126,7 @@ const NavigationBar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className="nav-link mx-3"
                 to="/online-portal"
@@ -129,7 +134,7 @@ const NavigationBar = () => {
               >
                 Online Shipping Portal
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 className="nav-link mx-3"
