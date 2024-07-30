@@ -9,9 +9,9 @@
 }
 
 @media (max-width: 992px) {
-  .custom-navbar-nav .nav-item {
-    margin-bottom: 20px;
-    margin-top: 20px;
+  .custom-navbar-nav .nav-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -30,6 +30,20 @@
     background-color: white;
     z-index: 1010;
   }
+}
+
+@media (max-width: 992px) {
+  .dropdown-item {
+    text-align: center;
+  }
+  .dropdown-menu {
+    margin-left: -75px;
+  }
+}
+
+.dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* HERO IMAGE */
