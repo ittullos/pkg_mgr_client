@@ -1,11 +1,34 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
+import { useState, useEffect } from "react";
 
 function ParcelShipping() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="container my-5 p-5">
       <div className="row">
+        {windowWidth >= 1200 && (
+          <div className="col-md-4">
+            <div className="sticky-div">
+              <ContactForm />
+            </div>
+          </div>
+        )}
         <div className="col-md-8 mx-auto">
-          <p className="lead">
+          <p className="lead lead-text text-center mt-4">
             At Package Manager, we understand that reliable and efficient parcel
             shipping is crucial for both individuals and businesses. With our
             extensive network of brick-and-mortar locations, we make it
@@ -23,7 +46,7 @@ function ParcelShipping() {
               style={{ maxWidth: "250px", height: "auto" }}
             />
           </div>
-          <p>
+          <p className="text-center body-text">
             FedEx is renowned for its global reach and fast delivery services.
             At Package Manager, we offer a variety of FedEx shipping options to
             suit your needs, including FedEx Ground, FedEx Express, and FedEx
@@ -41,7 +64,7 @@ function ParcelShipping() {
               style={{ maxWidth: "150px", height: "auto" }}
             />
           </div>
-          <p>
+          <p className="text-center body-text">
             UPS is another trusted name in the shipping industry, known for its
             comprehensive logistics solutions and exceptional customer service.
             Package Manager offers UPS services such as UPS Ground, UPS Next Day
@@ -55,11 +78,11 @@ function ParcelShipping() {
             <img
               src="../images/DHL-logo.png"
               alt="DHL Logo"
-              className="img-fluid pt-5 pe-1"
+              className="img-fluid pt-5 pe-1  dhl-logo"
               style={{ maxWidth: "325px", height: "auto" }}
             />
           </div>
-          <p>
+          <p className="text-center body-text">
             DHL specializes in international shipping, offering unparalleled
             expertise in cross-border logistics. At Package Manager, we provide
             DHL Express services to ensure your international shipments arrive
@@ -73,11 +96,11 @@ function ParcelShipping() {
             <img
               src="../images/USPS-logo.png"
               alt="USPS Logo"
-              className="img-fluid"
+              className="img-fluid usps-logo"
               style={{ maxWidth: "280px", height: "auto" }}
             />
           </div>
-          <p>
+          <p className="text-center body-text">
             The United States Postal Service (USPS) is a reliable and
             cost-effective option for domestic and international shipping.
             Package Manager offers a range of USPS services, including Priority
@@ -96,7 +119,7 @@ function ParcelShipping() {
             />
             <h2>Why Choose Package Manager?</h2>
           </div>
-          <p className="lead">
+          <p className="lead text-center body-text">
             At Package Manager, we are committed to providing you with the best
             shipping experience possible. Our knowledgeable staff is always
             ready to help you choose the right carrier and shipping option for
@@ -106,6 +129,11 @@ function ParcelShipping() {
             needs, and experience the convenience and reliability that our
             customers have come to expect.
           </p>
+          {windowWidth < 1200 && (
+            <div className="sticky-div">
+              <ContactForm />
+            </div>
+          )}
         </div>
       </div>
     </div>

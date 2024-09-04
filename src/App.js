@@ -64,7 +64,7 @@ function App() {
             <>
               <Hero
                 backgroundImage="/images/cards/mailbox.jpg"
-                overlayText="Smart Lockers / Mailboxes"
+                overlayText="Mailbox Services / Smart Locker"
               />
               <Mailbox />
             </>
