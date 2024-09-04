@@ -96,7 +96,7 @@ function App() {
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/retail-merchandising"
           element={
             <>
@@ -107,7 +107,7 @@ function App() {
               <RetailMerchandising />
             </>
           }
-        />
+        /> */}
         {/* Large Freight */}
         <Route
           path="/freight-packaging"
@@ -157,8 +157,8 @@ function App() {
             </>
           }
         />
-        <Route path="/online-portal" element={<OnlinePortal />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/online-portal" element={<OnlinePortal />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </Router>
   );
