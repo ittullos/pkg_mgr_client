@@ -124,7 +124,7 @@ function Home() {
             </div>
             <div className="mt-5"></div>
             <h1 className="text-center my-5">Our Services</h1>
-            <h3 className="text-dark mt-4 mb-2 pb-3 ps-3 card-header">
+            <h3 className="text-dark mt-4 mb-2 pb-3 ps-3 card-group-header">
               Retail Services
             </h3>
             <div className="row">
@@ -151,7 +151,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <h3 className="text-dark mt-5 pb-3 ps-3 card-header">
+            <h3 className="text-dark mt-5 pb-3 ps-3 card-group-header">
               Large Freight
             </h3>
             <div className="row">

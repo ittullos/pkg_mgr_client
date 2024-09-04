@@ -230,7 +230,7 @@ p {
 
 /* Add margin for screen sizes between 768px and 992px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .card-header {
+  .card-group-header {
     margin-left: 50px; /* Adjust the margin value as needed */
   }
 }
