@@ -196,17 +196,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLScYQNWcd3Kbz2mkr9fbHnBL8Ilq954KHjClQ5kwqxDIfEHZbA/viewform?embedded=true"
-                width="600"
-                height="700"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                title="Contact Us"
-              >
-                Loading…
-              </iframe> */
-}
