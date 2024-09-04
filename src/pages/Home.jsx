@@ -38,13 +38,6 @@ const retailServices = [
     image: "/images/cards/notary.jpg",
     link: "/notary-services",
   },
-  {
-    title: "Retail Merchandising",
-    description:
-      "Enhance your brand with our specialized retail merchandising services. We create, produce, and ship high-quality merchandise tailored to your business needs, helping you stand out in the marketplace.",
-    image: "/images/cards/merchandising.jpg",
-    link: "/retail-merchandising",
-  },
 ];
 
 const freightServices = [

@@ -4,12 +4,9 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import OnlinePortal from "./pages/OnlinePortal";
 import CopyPrint from "./pages/CopyPrint";
 import Notary from "./pages/Notary";
 import Mailbox from "./pages/Mailbox";
-import RetailMerchandising from "./pages/RetailMerchandising";
 import ParcelShipping from "./pages/ParcelShipping";
 import Packaging from "./pages/Packaging";
 import FreightPackaging from "./pages/FreightPackaging";
@@ -96,18 +93,6 @@ function App() {
             </>
           }
         />
-        {/* <Route
-          path="/retail-merchandising"
-          element={
-            <>
-              <Hero
-                backgroundImage="/images/cards/merchandising.jpg"
-                overlayText="Retail Merchandising"
-              />
-              <RetailMerchandising />
-            </>
-          }
-        /> */}
         {/* Large Freight */}
         <Route
           path="/freight-packaging"
@@ -157,8 +142,6 @@ function App() {
             </>
           }
         />
-        {/* <Route path="/online-portal" element={<OnlinePortal />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </Router>
   );

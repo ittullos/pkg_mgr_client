@@ -91,11 +91,6 @@ const NavigationBar = () => {
                 >
                   Notary Services
                 </NavDropdown.Item>
-                {/* <NavDropdown.Item
-                  onClick={() => handleLinkClick("/retail-merchandising")}
-                >
-                  Retail Merchandising
-                </NavDropdown.Item> */}
               </NavDropdown>
             </li>
             <li className="nav-item">
@@ -126,15 +121,6 @@ const NavigationBar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                className="nav-link mx-3"
-                to="/online-portal"
-                onClick={() => handleLinkClick("/online-portal")}
-              >
-                Online Shipping Portal
-              </Link>
-            </li> */}
             <li className="nav-item">
               <Link
                 className="nav-link mx-3"
