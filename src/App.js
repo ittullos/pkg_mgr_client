@@ -18,10 +18,12 @@ import Storage from "./pages/Storage";
 import Pickup from "./pages/Pickup";
 import HomeHero from "./components/HomeHero";
 import Hero from "./components/Hero";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavigationBar />
       <Routes>
         <Route

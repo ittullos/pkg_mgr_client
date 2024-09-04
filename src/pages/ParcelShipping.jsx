@@ -100,7 +100,7 @@ function ParcelShipping() {
               style={{ maxWidth: "280px", height: "auto" }}
             />
           </div>
-          <p className="text-center body-text">
+          <p className="text-center body-text pb-5">
             The United States Postal Service (USPS) is a reliable and
             cost-effective option for domestic and international shipping.
             Package Manager offers a range of USPS services, including Priority
@@ -110,7 +110,7 @@ function ParcelShipping() {
             letter or a package, USPS provides dependable service with
             comprehensive tracking and delivery confirmation.
           </p>
-          <div className="text-center mb-1 mt-4">
+          <div className="text-center mb-1 mt-5 pt-4">
             <img
               src="../pkg-mgr-logo.png"
               alt="Package Manager Logo"
