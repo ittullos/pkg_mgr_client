@@ -16,6 +16,7 @@ import FreightPackaging from "./pages/FreightPackaging";
 import Courier from "./pages/Courier";
 import Storage from "./pages/Storage";
 import Pickup from "./pages/Pickup";
+import HomeHero from "./components/HomeHero";
 import Hero from "./components/Hero";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           path="/"
           element={
             <>
-              <Hero />
+              <HomeHero />
               <Home />
             </>
           }
@@ -37,20 +38,123 @@ function App() {
           path="/parcel-shipping"
           element={
             <>
+              <Hero
+                backgroundImage="/images/cards/parcel.jpg"
+                overlayText="Parcel Shipping"
+              />
               <ParcelShipping />
             </>
           }
         />
-        <Route path="/packaging-services" element={<Packaging />} />
-        <Route path="/mailbox-services" element={<Mailbox />} />
-        <Route path="/copy-print-scan-shred" element={<CopyPrint />} />
-        <Route path="/notary-services" element={<Notary />} />
-        <Route path="/retail-merchandising" element={<RetailMerchandising />} />
+        <Route
+          path="/packaging-services"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/packaging.jpg"
+                overlayText="Packaging Services"
+              />
+              <Packaging />
+            </>
+          }
+        />
+        <Route
+          path="/mailbox-services"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/mailbox.jpg"
+                overlayText="Smart Lockers / Mailboxes"
+              />
+              <Mailbox />
+            </>
+          }
+        />
+        <Route
+          path="/copy-print-scan-shred"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/copy.jpg"
+                overlayText="Copy / Print / Scan / Shred"
+              />
+              <CopyPrint />
+            </>
+          }
+        />
+        <Route
+          path="/notary-services"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/notary.jpg"
+                overlayText="Notary Services"
+              />
+              <Notary />
+            </>
+          }
+        />
+        <Route
+          path="/retail-merchandising"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/merchandising.jpg"
+                overlayText="Retail Merchandising"
+              />
+              <RetailMerchandising />
+            </>
+          }
+        />
         {/* Large Freight */}
-        <Route path="/freight-packaging" element={<FreightPackaging />} />
-        <Route path="/courier-services" element={<Courier />} />
-        <Route path="/storage-and-fulfillment" element={<Storage />} />
-        <Route path="/pickup-and-delivery" element={<Pickup />} />
+        <Route
+          path="/freight-packaging"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/freight.jpg"
+                overlayText="Large Freight Packaging"
+              />
+              <FreightPackaging />
+            </>
+          }
+        />
+        <Route
+          path="/courier-services"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/courier.jpg"
+                overlayText="Courier Services"
+              />
+              <Courier />
+            </>
+          }
+        />
+        <Route
+          path="/storage-and-fulfillment"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/storage.jpg"
+                overlayText="Storage and Fulfillment"
+              />
+              <Storage />
+            </>
+          }
+        />
+        <Route
+          path="/pickup-and-delivery"
+          element={
+            <>
+              <Hero
+                backgroundImage="/images/cards/delivery.jpg"
+                overlayText="Pickup and Delivery"
+              />
+              <Pickup />
+            </>
+          }
+        />
         <Route path="/online-portal" element={<OnlinePortal />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

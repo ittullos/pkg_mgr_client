@@ -1,10 +1,18 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
   return (
-    <div>
-      <h2>Contact</h2>
-    </div>
+    <>
+      <div
+        style={{
+          maxWidth: 500,
+          margin: "150px auto 0",
+        }}
+      >
+        <ContactForm />
+      </div>
+    </>
   );
 }
 

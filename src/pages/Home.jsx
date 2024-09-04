@@ -96,7 +96,7 @@ function Home() {
 
   return (
     <div>
-      <div className="container my-5">
+      <div className="container my-5 p-3">
         <div className="row">
           {windowWidth >= 1200 && (
             <div className="col-md-4">

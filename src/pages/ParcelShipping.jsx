@@ -2,10 +2,9 @@ import React from "react";
 
 function ParcelShipping() {
   return (
-    <div className="container my-5">
+    <div className="container my-5 p-5">
       <div className="row">
         <div className="col-md-8 mx-auto">
-          <h1 className="text-center mb-5">Parcel Shipping</h1>
           <p className="lead">
             At Package Manager, we understand that reliable and efficient parcel
             shipping is crucial for both individuals and businesses. With our
