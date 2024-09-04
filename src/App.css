@@ -157,7 +157,6 @@ p {
   /* max-width: 1000px; */
   margin: auto;
   padding: 0px;
-
 }
 
 /* Adjustments for spacing */
@@ -209,4 +208,29 @@ p {
 /* Debugging styles */
 .debug-border {
   border: 1px dotted red;
+}
+
+.sticky-div {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 30vh;
+  left: 0;
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Full height */
+  background-color: #f8f9fa; /* Background color */
+  padding: 20px; /* Padding */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  margin-top: 60px; /* Adjust margin as needed */
+}
+
+.card {
+  max-width: 500px; /* Adjust the width as needed */
+  margin: auto;
+}
+
+/* Add margin for screen sizes between 768px and 992px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-header {
+    margin-left: 50px; /* Adjust the margin value as needed */
+  }
 }

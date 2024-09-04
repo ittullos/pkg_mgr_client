@@ -1,4 +1,6 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
+import { useState, useEffect } from "react";
 
 const retailServices = [
   {
@@ -77,10 +79,32 @@ const freightServices = [
 ];
 
 function Home() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div className="container my-5">
         <div className="row">
+          {windowWidth >= 1200 && (
+            <div className="col-md-4">
+              <div className="sticky-div">
+                <ContactForm />
+              </div>
+            </div>
+          )}
           <div className="col-md-8 mx-auto">
             <h1 className="text-center my-5">Welcome to Package Manager</h1>
             <img
@@ -100,10 +124,12 @@ function Home() {
             </div>
             <div className="mt-5"></div>
             <h1 className="text-center my-5">Our Services</h1>
-            <h3 className="text-dark mt-4 mb-2  pb-3 ps-3">Retail Services</h3>
+            <h3 className="text-dark mt-4 mb-2 pb-3 ps-3 card-header">
+              Retail Services
+            </h3>
             <div className="row">
               {retailServices.map((retailService, index) => (
-                <div className="col-12 col-lg-6 mb-4 px-4 py-3" key={index}>
+                <div className="col-12 col-xl-6 mb-4 px-4 py-3" key={index}>
                   <a href={retailService.link} className="text-decoration-none">
                     <div className="card h-100 green-border mb-3 shadow card-hover">
                       <img
@@ -125,15 +151,17 @@ function Home() {
                 </div>
               ))}
             </div>
-            <h3 className="text-dark mt-5 pb-3 ps-3">Large Freight</h3>
+            <h3 className="text-dark mt-5 pb-3 ps-3 card-header">
+              Large Freight
+            </h3>
             <div className="row">
               {freightServices.map((freightService, index) => (
-                <div className="col-12 col-lg-6 mb-4 px-4 py-3" key={index}>
+                <div className="col-12 col-xl-6 mb-4 px-4 py-3" key={index}>
                   <a
                     href={freightService.link}
                     className="text-decoration-none"
                   >
-                    <div className="card h-100 green-border shadow card-hover">
+                    <div className="card h-100 green-border shadow card-hover mx-auto">
                       <img
                         src={freightService.image}
                         className="card-img-top"
@@ -155,6 +183,11 @@ function Home() {
                 </div>
               ))}
             </div>
+            {windowWidth < 1200 && (
+              <div className="sticky-div">
+                <ContactForm />
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -163,3 +196,17 @@ function Home() {
 }
 
 export default Home;
+
+{
+  /* <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScYQNWcd3Kbz2mkr9fbHnBL8Ilq954KHjClQ5kwqxDIfEHZbA/viewform?embedded=true"
+                width="600"
+                height="700"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Contact Us"
+              >
+                Loading…
+              </iframe> */
+}
