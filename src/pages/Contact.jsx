@@ -9,6 +9,7 @@ function Contact() {
           maxWidth: 500,
           margin: "150px auto 0",
         }}
+        className="p-3"
       >
         <ContactForm />
       </div>

@@ -16,6 +16,7 @@ import Pickup from "./pages/Pickup";
 import HomeHero from "./components/HomeHero";
 import Hero from "./components/Hero";
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -139,6 +140,14 @@ function App() {
                 overlayText="Pickup and Delivery"
               />
               <Pickup />
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Contact />
             </>
           }
         />
