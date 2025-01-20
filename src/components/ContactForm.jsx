@@ -6,7 +6,7 @@ function ContactForm() {
       <div className="sticky-form-container">
         <h3 className="text-center">Contact Us</h3>
         <form
-          action="https://formspree.io/f/mnnardao"
+          action="https://formspree.io/f/xeojyeqk"
           method="POST"
           className="form"
         >
